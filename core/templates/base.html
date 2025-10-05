@@ -3,9 +3,10 @@
     <head>
         {% load static %}
         <link rel="icon" href="{% static 'images/icon.png' %}" type="image/png">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.flatly.css' %}">
         <title>Drew Giffin</title>
     </head>
     <body>
-        <p>Hello world!</p>
+        {% include 'navbar.html' %}
     </body>
 </html>
