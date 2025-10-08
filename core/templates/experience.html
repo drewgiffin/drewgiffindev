@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
     <br>
-    {% include "experience_tabs.html" %}
-    {% include "experience_content.html" %}
+    {% include "experience/tabs.html" %}
+    {% include "experience/content.html" %}
 
     {% comment %} <h2>Pilot Games</h2>
     <h4>Senior Software Engineer / Mathematician</h4>
@@ -28,10 +28,5 @@
     <ul>
         <li>Built a PHP/MySQL system to track and manage thousands of orders and devices, replacing manual processes and improving operational efficiency; the platform remains in use today.</li>
     </ul>
-
-    <br>
-    <h2>Certifications</h2>
-    <h5>
-        <a href = "https://www.coursera.org/account/accomplishments/specialization/LEMLHV7PAPXY"  target="_blank">Machine Learning Specialization</a>
-    </h5>{% endcomment %}
+    {% endcomment %}
 {% endblock %}
