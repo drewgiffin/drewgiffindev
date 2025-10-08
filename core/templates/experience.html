@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-    <h2>Pilot Games</h2>
-    <h4>Senior Software Developer / Mathematician</h4>
+    <br>
+    {% include "experience_tabs.html" %}
+    {% include "experience_content.html" %}
+
+    {% comment %} <h2>Pilot Games</h2>
+    <h4>Senior Software Engineer / Mathematician</h4>
     <h5>August 2022 - September 2025</h5>
     <ul>
         <li>Designed and developed the company’s core math engine powering regulated pull-tab and slot games, with scalable, data driven pipelines.</li>
@@ -29,37 +33,5 @@
     <h2>Certifications</h2>
     <h5>
         <a href = "https://www.coursera.org/account/accomplishments/specialization/LEMLHV7PAPXY"  target="_blank">Machine Learning Specialization</a>
-    </h5>
-    
-    <br>
-    <h2>Skills</h2>
-    <h5>Languages</h5>
-    <ul>
-        <li>Python, PHP, HTML, Javascript, CSS, MySQL, Git, C#, C++, C</li>
-    </ul>
-    <h5>Tools</h5>
-    <ul>
-        <li>Numpy, Microsoft Excel, Unity, Apache, Django</li>
-    </ul>
-    <h5>Generic</h5>
-    <ul>
-        <li>CI/CD, Game Design, Par Sheets, Class II Gaming</li>
-    </ul>
-    
-    <br>
-    <h2>Education</h2>
-    <h4>Central Michigan University</h4>
-    <h5>September 2015 - December 2019</h5>
-    <ul>
-        <li>B.S. &nbsp-&nbsp Computer Science</li>
-    </ul>
-    
-    <br>
-    <h2>Extracurricular</h2>
-    <h4>Central Michigan University eSports Club</h4>
-    <h5>President, April 2017 - April 2019</h5>
-    <ul>
-        <li>Oversaw weekly meetings for members.</li>
-        <li>Hosted competitions between various schools.</li>
-    </ul>
+    </h5>{% endcomment %}
 {% endblock %}
