@@ -1,5 +1,6 @@
-from django.http import HttpResponse
 from django.shortcuts import render
+
+from .forms import ContactForm
 
 def index(request):
     return render(request, "home.html")
@@ -11,4 +12,8 @@ def experience(request):
     return render(request, "experience.html")
 
 def contact(request):
-    return render(request, "contact.html")
+    if request.method == "POST":
+        return render(request, "contact.html")
+    else:
+        form = ContactForm()
+        return render(request, "contact.html", {"form": form})
