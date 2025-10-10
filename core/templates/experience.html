@@ -1,32 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
     <br>
-    {% include "experience/tabs.html" %}
+    <h2>Experience</h2>
+    {% include "experience/navbar.html" %}
     {% include "experience/content.html" %}
-
-    {% comment %} <h2>Pilot Games</h2>
-    <h4>Senior Software Engineer / Mathematician</h4>
-    <h5>August 2022 - September 2025</h5>
-    <ul>
-        <li>Designed and developed the company’s core math engine powering regulated pull-tab and slot games, with scalable, data driven pipelines.</li>
-        <li>Delivered more than fifty regulated games (each with five to twenty model variants), achieving target RTP and volatility across multibillion-dollar markets.</li>
-        <li>Built an automated pipeline to transform configuration files into production-ready game packages and whitebox simulations.</li>
-        <li>Revived stalled projects by converting single models from failed external partnerships into complete, compliant game packages.</li>
-        <li>Led and mentored a team of six developers (internal and external), resolving complex math challenges and ensuring regulatory compliance.</li>
-        <li>Partnered with project managers to define deliverables, set timelines, and communicate math engine capabilities and limitations.</li>
-        <li>Incorporated player behavior features (e.g., near misses) into mathematically sound models, optimizing engagement while maintaining compliance.</li>
-    </ul>
-    <h4>Technical Operations Manager</h4>
-    <h5>December 2019 - August 2025</h5>
-    <ul>
-        <li>Built and scaled an iPad configuration pipeline using Apple Configurator, increasing throughput from single device setups to hundreds of devices per day.</li>
-        <li>Managed a team of five, scheduling workloads and overseeing end-to-end device preparation, from software installation and SSID configuration to charging, labeling, and packaging.</li>
-        <li>Streamlined operational processes to support timely distributor shipments while maintaining compliance and quality standards.</li>
-    </ul>
-    <h4>Software Engineer</h4>
-    <h5>August 2018 - August 2022</h5>
-    <ul>
-        <li>Built a PHP/MySQL system to track and manage thousands of orders and devices, replacing manual processes and improving operational efficiency; the platform remains in use today.</li>
-    </ul>
-    {% endcomment %}
 {% endblock %}
