@@ -11,3 +11,6 @@
     line-height: inherit;
     vertical-align: baseline;
 }
+.experience-section:last-child {
+    padding-bottom: 50px;
+}
