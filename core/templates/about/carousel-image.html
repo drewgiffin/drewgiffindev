@@ -1,4 +1,9 @@
 {% load static %}
+{% load path_filters %}
 <div class="carousel-item{% if active %} active{% endif %}">
-    <img src="{% static source %}" class="d-block w-100" alt="image">
+    <img 
+    src="{% static source %}" 
+    class="d-block w-100" 
+    alt="{{ source|clean_base_name }}"
+    >
 </div>
