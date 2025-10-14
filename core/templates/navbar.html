@@ -1,7 +1,25 @@
+{% load static %}
+{% load path_filters %}
 <div class="bs-component">
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href=".">Drew Giffin</a>
+            <div class="container">
+                <a 
+                class="navbar-brand" 
+                href="."
+                style="position: relative; top: 2px;"
+                >
+                    Drew Giffin
+                </a>
+                <span class="me-4" style="border-left: 2px solid white; height: 40px;"></span>
+                <a 
+                class="navbar-brand" 
+                href="https://www.linkedin.com/in/drew-giffin-5167122a9/"
+                target="_blank"
+                >
+                    {% include "icons/linkedin_logo.svg" %}
+                </a>
+            </div>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     {% if request.resolver_match.url_name == 'index' %}
