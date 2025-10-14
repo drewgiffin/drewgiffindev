@@ -1,0 +1,18 @@
+<div id="carousel" class="carousel slide mt-4 ms-3 me-4">
+    <div class="carousel-inner">
+        {% include "about/carousel-image.html" with source="images/arya_ink.jpg" active=True %}
+        {% include "about/carousel-image.html" with source="images/arya_puppy.jpg" %}
+        {% include "about/carousel-image.html" with source="images/arya_tree.jpg" %}
+        {% include "about/carousel-image.html" with source="images/arya_sunset.jpg" %}
+        {% include "about/carousel-image.html" with source="images/arya_goofy.jpg" %}
+        {% include "about/carousel-image.html" with source="images/sleeping_bear_winter.jpg" %}
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
