@@ -11,6 +11,9 @@ def about(request):
 def experience(request):
     return render(request, "experience.html")
 
+def projects(request):
+    return render(request, "projects.html")
+
 def contact(request):
     if request.method == "POST":
         return render(request, "contact.html")
