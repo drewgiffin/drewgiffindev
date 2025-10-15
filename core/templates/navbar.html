@@ -1,0 +1,18 @@
+{% load static %}
+{% load path_filters %}
+<div class="bs-component">
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <div>
+                {% include "navbar/brand.html" %}
+            </div>
+            <ul class="navbar-nav ms-auto">
+                {% include "navbar/list-item.html" with url_name="index" url_label="Home" url="."%}
+                {% include "navbar/list-item.html" with url_name="about" url_label="About" url="./about"%}
+                {% include "navbar/list-item.html" with url_name="experience" url_label="Experience" url="./experience"%}
+                {% include "navbar/list-item.html" with url_name="projects" url_label="Projects" url="./projects"%}
+                {% include "navbar/list-item.html" with url_name="contact" url_label="Contact" url="./contact"%}
+            </ul>
+        </div>
+    </nav>
+</div>

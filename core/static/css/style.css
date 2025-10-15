@@ -1,0 +1,32 @@
+/* experience */
+
+.experience-section {
+    scroll-margin-top: 80px;
+}
+
+.experience-section h6 {
+    line-height: 1.5;
+    margin-bottom: 0.5rem; 
+}
+
+.experience-section .btn-link {
+    font-size: inherit;
+    padding: 0;
+    line-height: inherit;
+    vertical-align: baseline;
+}
+
+.experience-section:last-child {
+    padding-bottom: 50px;
+}
+
+
+/* svg */
+.navbar-brand svg {
+    height: 30px;
+    fill: white;
+}
+
+.navbar-brand:hover svg {
+    fill:#18bc9c;
+}

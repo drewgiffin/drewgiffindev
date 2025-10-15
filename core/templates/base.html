@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <link rel="icon" href="{% static 'images/icon.png' %}" type="image/png">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.flatly.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+        <script src="{% static 'js/tooltip-init.js' %}"></script>
+        <title>Drew Giffin</title>
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        <div class="container-fluid">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

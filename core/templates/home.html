@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-md-3">
+        <div class="mt-4 ms-3 me-5">
+            {% load static %}
+            <img src="{% static 'images/profile.jpg' %}" class="img-fluid rounded-pill m-4">
+        </div>
+    </div>
+    <div class="col-md-9">
+        <h1 class="mt-4">Drew Giffin</h1>
+        <h3>Software & Mathematics</h3>
+        <br>
+        <h4>Hi, I’m Drew Giffin. I’m a self driven full-stack developer who tackles everything from small scripts to large projects, coding both for passion and professional projects. My work spans game mechanics, tools, and web projects, blending creativity with logic to build practical and engaging solutions. I enjoy taking on challenges that let me learn as I go, turning complex problems into something understandable and usable.</h4>
+        <h4>Take a look at my projects and experiences to see the range of what I do, or get in touch to collaborate or chat about coding, games, or new ideas.</h4>
+    </div>
+</div>
+{% endblock %}
