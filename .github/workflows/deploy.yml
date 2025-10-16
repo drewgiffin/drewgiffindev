@@ -22,13 +22,13 @@ jobs:
       - name: Deploy to server
         run: |
           ssh -i ~/.ssh/id_ed25519 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} << 'EOF'
+          export DJANGO_SETTINGS_MODULE=config.settings.production
           cd /var/www/drewgiffindev
           git fetch origin main
           git reset --hard origin/main
           source venv/bin/activate
           pip install -r requirements.txt
           python manage.py collectstatic --noinput
-          python manage.py migrate --noinput
           sudo systemctl restart gunicorn
           sudo systemctl reload nginx
           EOF
