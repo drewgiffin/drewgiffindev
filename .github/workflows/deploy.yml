@@ -22,6 +22,7 @@ jobs:
       - name: Deploy to server
         run: |
           ssh -i ~/.ssh/id_ed25519 ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} << 'EOF'
+          export DJANGO_SETTINGS_MODULE=config.settings.production
           cd /var/www/drewgiffindev
           git fetch origin main
           git reset --hard origin/main
