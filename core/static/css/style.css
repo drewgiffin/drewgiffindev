@@ -1,5 +1,4 @@
 /* experience */
-
 .experience-section {
     scroll-margin-top: 80px;
 }
@@ -29,4 +28,14 @@
 
 .navbar-brand:hover svg {
     fill:#18bc9c;
+}
+
+
+/* navbar dropdowns, this is to make it more readable */
+.navbar .dropdown-item {
+    color: rgb(201, 201, 201);
+}
+
+.navbar .dropdown-item:hover {
+    color: white;
 }
