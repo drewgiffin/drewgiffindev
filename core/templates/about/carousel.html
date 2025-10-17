@@ -1,4 +1,12 @@
 <div id="carousel" class="carousel slide mt-4 ms-3 me-4">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carousel"  data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel"  data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carousel"  data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#carousel"  data-bs-slide-to="4"></button>
+        <button type="button" data-bs-target="#carousel"  data-bs-slide-to="5"></button>
+    </div>
     <div class="carousel-inner">
         {% include "about/carousel-image.html" with source="images/arya_ink.jpg" active=True %}
         {% include "about/carousel-image.html" with source="images/arya_puppy.jpg" %}
