@@ -1,4 +1,5 @@
 <div id="carousel" class="carousel slide mt-4 ms-3 me-4">
+    {% include "about/carousel-indicators.html" with image_count=6 %}
     <div class="carousel-inner">
         {% include "about/carousel-image.html" with source="images/arya_ink.jpg" active=True %}
         {% include "about/carousel-image.html" with source="images/arya_puppy.jpg" %}
