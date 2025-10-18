@@ -12,7 +12,7 @@ This site serves as both a professional presentation platform and a technical de
 - Responsive design using **Bootstrap**
 - Automated **CI/CD pipeline** for seamless updates
 - Organized project and resume repository structure
-- Integration with static file handling in Django
+- Integration with static file handling in **Django**
 - Deployed on an **Ubuntu 22.04** server using **Gunicorn** and **Nginx**
 
 ---
