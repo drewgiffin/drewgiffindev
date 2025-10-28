@@ -1,16 +1,20 @@
 <div class="bs-component">
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
             <div>
                 {% include "navbar/brand.html" %}
             </div>
-            <ul class="navbar-nav ms-auto">
-                {% include "navbar/item.html" with url_name="index" url_label="Home" url="." %}
-                {% include "navbar/item.html" with url_name="about" url_label="About" url="./about" %}
-                {% include "navbar/item.html" with url_name="experience" url_label="Experience" url="./experience" %}
-                {% include "navbar/item.html" with url_name="projects" url_label="Projects" url="./projects" %}
-                {% include "navbar/resumes.html" %}
-                {% include "navbar/item.html" with url_name="contact" url_label="Contact" url="./contact" %}
+            <ul class="navbar-nav d-none d-md-flex">
+                {% include "navbar/nav-link.html" with url_name="index" url_label="Home" url="." %}
+                {% include "navbar/nav-link.html" with url_name="about" url_label="About" url="./about" %}
+                {% include "navbar/nav-link.html" with url_name="experience" url_label="Experience" url="./experience" %}
+                {% include "navbar/nav-link.html" with url_name="projects" url_label="Projects" url="./projects" %}
+                {% include "navbar/nav-link.html" with url_name="contact" url_label="Contact" url="./contact" %}
+                {% include "navbar/resumes-dropdown.html" %}
+            </ul>
+            <ul class="navbar-nav d-flex d-md-none">
+                {% include "navbar/pages-dropdown.html" %}
+                {% include "navbar/resumes-dropdown.html" %}
             </ul>
         </div>
     </nav>
