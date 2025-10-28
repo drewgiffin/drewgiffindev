@@ -1,0 +1,5 @@
+{% if request.resolver_match.url_name == url_name %}
+    <a class="dropdown-item active" href="{{ url }}">{{ url_label }}</a>
+{% else %}
+    <a class="dropdown-item" href="{{ url }}">{{ url_label }}</a>
+{% endif %}
