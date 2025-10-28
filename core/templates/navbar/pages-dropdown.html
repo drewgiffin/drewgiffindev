@@ -1,0 +1,11 @@
+{% load static %}
+<li class="nav-item dropdown" style="z-index: 1001;">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Pages</a>
+    <ul class="dropdown-menu dropdown-menu-end">
+        {% include "navbar/dropdown-link.html" with url_name="index" url_label="Home" url="." %}
+        {% include "navbar/dropdown-link.html" with url_name="about" url_label="About" url="./about" %}
+        {% include "navbar/dropdown-link.html" with url_name="experience" url_label="Experience" url="./experience" %}
+        {% include "navbar/dropdown-link.html" with url_name="projects" url_label="Projects" url="./projects" %}
+        {% include "navbar/dropdown-link.html" with url_name="contact" url_label="Contact" url="./contact" %}
+    </ul>
+</li>

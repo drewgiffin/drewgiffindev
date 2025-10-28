@@ -1,0 +1,17 @@
+{% load static %}
+<li class="nav-item dropdown" style="z-index: 1001;">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+        Resumes
+    </a>
+    <div class="dropdown-menu dropdown-menu-end">
+        <a class="dropdown-item" href="{% static 'documents/DrewGiffinResumeMachineLearningEngineer.pdf' %}" target="_blank">
+            Machine Learning Engineer
+        </a>
+        <a class="dropdown-item" href="{% static 'documents/DrewGiffinResumeSoftwareEngineer.pdf' %}" target="_blank">
+            Software Engineer
+        </a>
+        <a class="dropdown-item" href="{% static 'documents/DrewGiffinResumeMathematician.pdf' %}" target="_blank">
+            Mathematician
+        </a>
+    </div>
+</li>
