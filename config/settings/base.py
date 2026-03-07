@@ -79,3 +79,8 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / ".." / "core" / "static",
     ]
+
+
+# Email
+
+EMAIL_USE_TLS = True
