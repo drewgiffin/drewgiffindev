@@ -1,4 +1,5 @@
 from .base import *
+load_dotenv(f"{BASE_DIR}/.env.production")
 
 DEBUG = False
 ALLOWED_HOSTS = [
