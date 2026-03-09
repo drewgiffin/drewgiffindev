@@ -19,12 +19,13 @@ def contact(request):
     if request.method == "POST":
         form = ContactForm(request.POST)
         if form.is_valid():
+            name = form.cleaned_data["name"]
             subject = form.cleaned_data["subject"]
             message = form.cleaned_data["message"]
             email = form.cleaned_data["email"]
             send_mail(
                 subject,
-                f"Email: {email}\nMessage: {message}",
+                f"Name: {name}\nEmail: {email}\nMessage: {message}",
                 settings.EMAIL_HOST_USER,
                 ["drewgiffin@outlook.com"],
                 fail_silently=False,
