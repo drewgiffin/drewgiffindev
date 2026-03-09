@@ -2,7 +2,7 @@ import os
 from .base import *
 from dotenv import load_dotenv
 
-load_dotenv(str(BASE_DIR / ".." / ".env.development"))
+load_dotenv(str(BASE_DIR / ".." / ".env.production"))
 
 DEBUG = False
 ALLOWED_HOSTS = [
